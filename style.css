@@ -1,0 +1,144 @@
+body {
+  background-color: #feb2b5;
+}
+
+h2 {
+  font-family: "Rockybilly", sans-serif;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.modal-main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 400px;
+  max-width: 300px;
+  border-radius: 14% 86% 20% 80% / 71% 26% 74% 29%;
+  background-color: #c32027;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.597);
+}
+
+.modal-inner {
+  margin: 5em auto;
+}
+
+.modal-inner-loading {
+  text-align: center;
+}
+
+.modal-choice-btns {
+  margin-top: 2rem;
+  padding: 0.2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-btn {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f3f2;
+  height: 60px;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.decline_btn {
+  border-radius: 51% 49% 0% 59% / 0% 95% 5% 91%;
+}
+
+.accept_btn {
+  border-radius: 59% 0% 49% 51% / 91% 5% 95% 0%;
+}
+
+.modal-btn:hover {
+  background-color: #2bd105;
+  transition: all 0.1s ease-in-out;
+}
+
+.end-message {
+  font-size: 1.2em;
+}
+
+.modal-text {
+  height: 140px;
+  line-height: 23px;
+  margin-bottom: 0;
+  margin-inline: 1rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.qr-gift {
+  width: 170px;
+}
+
+.inner-flex {
+  position: absolute;
+  top: 17%;
+  left: 0;
+  right: 0;
+}
+
+@media all and (min-width: 1024px) {
+  .thankMessage {
+    margin-top: 2.2em;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Rockybilly", sans-serif;
+    font-size: 27px;
+    margin-top: 0;
+  }
+
+  .end-message {
+    font-size: 1.7em;
+  }
+
+  /* Modal Desktop */
+
+  .modal-btn {
+    margin: 2em 0;
+    height: 80px;
+    width: 170px;
+  }
+
+  .modal-choice-btns {
+    margin-top: 0.2em;
+  }
+
+  .modal-main {
+    margin: auto;
+    max-width: 500px;
+    height: 450px;
+  }
+
+  .modal-inner {
+    margin: 8em auto;
+  }
+
+  .input-form {
+    margin: 0.5rem;
+  }
+
+  .display-name {
+    font-size: 1.7rem;
+  }
+
+  .qr-gift {
+    width: 200px;
+  }
+}
