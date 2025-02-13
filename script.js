@@ -1,4 +1,3 @@
-// Cookie Setup
 const cookieModal = document.getElementById("modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const acceptBtn = document.getElementById("accept-btn");
@@ -8,13 +7,18 @@ const choiceBtn = document.getElementById("modal-choice-btns");
 
 cookieModal.style.display = "inline";
 
-declineBtn.addEventListener("mouseover", () => {
+// Function to toggle the "reverse" class
+function toggleReverse(event) {
+  event.preventDefault(); // Prevent unintended behavior on mobile
   choiceBtn.classList.toggle("reverse");
-});
+}
 
-declineBtn.addEventListener("click", () => {
-  choiceBtn.classList.toggle("reverse");
-});
+// Handle hover effect for desktop
+declineBtn.addEventListener("mouseover", toggleReverse);
+
+// Handle tap/click for mobile
+declineBtn.addEventListener("touchstart", toggleReverse);
+declineBtn.addEventListener("click", toggleReverse);
 
 acceptBtn.addEventListener("click", () => {
   innerText.innerHTML = `
