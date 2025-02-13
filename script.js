@@ -8,8 +8,8 @@ const choiceBtn = document.getElementById("modal-choice-btns");
 cookieModal.style.display = "inline";
 
 // Function to toggle the "reverse" class
-function toggleReverse(event) {
-  event.preventDefault(); // Prevent unintended behavior on mobile
+function toggleReverse(e) {
+  e.preventDefault(); // Prevent unintended behavior on mobile
   choiceBtn.classList.toggle("reverse");
 }
 
