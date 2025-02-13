@@ -12,6 +12,10 @@ declineBtn.addEventListener("mouseover", () => {
   choiceBtn.classList.toggle("reverse");
 });
 
+declineBtn.addEventListener("click", () => {
+  choiceBtn.classList.toggle("reverse");
+});
+
 acceptBtn.addEventListener("click", () => {
   innerText.innerHTML = `
     <div class="inner-flex">
